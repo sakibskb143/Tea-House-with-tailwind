@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <!-- google font manrope -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<!-- font awesome kit -->
+ <script src="https://kit.fontawesome.com/0cd1eac34e.js" crossorigin="anonymous"></script>
+
+ <!-- tailwind css link -->
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<body>
+    
+    <main class="max-w-screen-xl mx-auto px-10 lg:px-16">
+        <header class="flex pt-10 mb-20 flex-col md:flex-row lg:flex-row items-center justify-center">
+            <!-- text content -->
+             <div>
+                <h1  class="text-5xl lg:7xl">
+                    It's good <br>
+                    tea time at The <br>
+                    Tea House
+                </h1>
+                <br>
+                <p class="text-gray-600 text-lg w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <br>
+                <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-5 rounded-xl text-white font-bold">
+                    Explore More
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45 "></i>
+                </button>
+             </div>
+             <!-- image content -->
+              <div class="relative">
+                <!-- image -->
+               <div>
+                <img class="w-full" src="./images/banner.png" alt="">
+               </div>
+                 <!-- cart -->
+               <div class="absolute  flex items-center gap-5 bg-white shadow-lg rounded-lg px-2 py-2 lg:px-10 lg:py-4 bottom-6  md:botton-2 ">
+                <div>
+                    <i class="fa-solid fa-star text-3xl text-orange-300"></i>
+                </div>
+                <!-- text -->
+                 <div class="ml-2">
+                    <h1 class="text-3xl font-bold">5.00</h1>
+                    <p class="text-gray-600 text-xl font-semibold">Trust Pilot Ratings</p>
+                 </div>
+
+               </div>
+              </div>
+            
+
+        </header>
+
+    </main>
+    
+</body>
+</html>
