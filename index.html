@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="font-manrope"> <!-- Add class here for global font -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tea House</title>
-  <!-- google font manrope -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-</head>
-<!-- font awesome kit -->
-<script src="https://kit.fontawesome.com/0cd1eac34e.js" crossorigin="anonymous"></script>
 
-<!-- tailwind css link -->
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-          primary: '#1C1C1C',
-          secondary: '#F4F4F4',
+  <!-- ✅ Google Fonts: Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+  <!-- ✅ Tailwind CSS (replace with CDN version, not @tailwindcss/browser) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary: '#1C1C1C',
+            secondary: '#F4F4F4',
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+          }
         }
       }
     }
-  }
-</script>
+  </script>
 
-<body>
+  <!-- ✅ Font Awesome -->
+  <script src="https://kit.fontawesome.com/0cd1eac34e.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-manrope">
 
   <main class="max-w-screen-xl mx-auto px-10 lg:px-16">
     <header class="flex pt-10 mb-20 flex-col md:flex-row lg:flex-row items-center justify-center">
